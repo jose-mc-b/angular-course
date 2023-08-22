@@ -1,22 +1,22 @@
 <h4>Add character</h4>
 <form action="" class="row" (ngSubmit)="emitCharacter()">
-    <input 
-    type="text" 
-    [(ngModel)]="character.name" 
-    name="name" id="" 
-    class="form-control mt-2" 
+    <input
+    type="text"
+    [(ngModel)]="character.name"
+    name="name" id=""
+    class="form-control mt-2"
     placeholder="Name">
 
-    
-    <input 
-    type="number" 
-    [(ngModel)]="character.power" 
-    name="power" id="" 
-    class="form-control mt-2" 
+
+    <input
+    type="number"
+    [(ngModel)]="character.power"
+    name="power" id=""
+    class="form-control mt-2"
     placeholder="Power level">
 
     <button type="submit" class="btn btn-primary mt-2" >
-        Agregar
+        Add
     </button>
 
     <!-- <pre> {{ character | json }} </pre> -->
