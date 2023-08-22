@@ -16,12 +16,20 @@ export class ListComponent {
 {id: uuid(), name: 'Vegeta',power: 130},
 ]
 
-@Output()
+/* @Output()
 onDelete: EventEmitter<number> = new EventEmitter();
 
 onDeleteCharacter(index: number): void {
   console.log(index)
   this.onDelete.emit( index );
-
 }
+ */
+
+  @Output()
+  onDeleteById: EventEmitter<string> = new EventEmitter();
+
+  onDeleteCharacterById (id: string){
+    this.onDeleteById.emit(id);
+  }
+
 }
