@@ -1,4 +1,5 @@
 import { Component} from "@angular/core";
+import { Character } from '../interfaces/character.interface';
 
 @Component({
     selector:'app-dbz-main-page',
@@ -6,5 +7,20 @@ import { Component} from "@angular/core";
 })
 export class MainPageComponent {
  
+    public characters: Character[] =[
+        {name: 'Krilin', power:39},
+        {name: 'Goku', power: 160},
+        {name: 'Trunks',power: 20},
+    ];
 
+
+     onNewCharacter(character: Character):void {
+        this.characters.push(character);
+    } 
+
+    onDeleteCharacter(index: number):void {
+        this.characters.splice(index);
+    }
 }
+
+
