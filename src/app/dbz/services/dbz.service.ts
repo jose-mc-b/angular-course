@@ -7,9 +7,9 @@ import { v4 as uuid } from 'uuid'
 export class DbzService {
 
   public characters: Character[] =[
-    {name: 'Krilin', power:39},
-    {name: 'Goku', power: 160},
-    {name: 'Trunks',power: 20},
+    {id: uuid(), name: 'Krilin', power:39},
+    {id: uuid(), name: 'Goku', power: 160},
+    {id: uuid(), name: 'Trunks',power: 20},
 ];
 
 
